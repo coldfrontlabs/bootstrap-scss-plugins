@@ -1,0 +1,15 @@
+// ----------
+// Mixin to add text-outline classes.
+//
+// Creates a selector based on the $parent provided and the $colour given.
+// ----------
+
+@mixin text-outline-variant ($parent, $colour, $width) {
+  #{$parent} {
+    text-shadow:
+    -$width -$width 0 $colour,
+    $width -$width 0 $colour,
+    -$width $width 0 $colour,
+    $width $width 0 $colour !important;
+  }
+}

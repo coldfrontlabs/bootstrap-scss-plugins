@@ -1,0 +1,8 @@
+// ----------
+// col-count classes.
+// ----------
+
+// Generate column-count classes based on the number of $grid-columns available.
+@for $i from 1 to $grid-columns {
+  @include column-count-variant('.col-count', $i);
+}

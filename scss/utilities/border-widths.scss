@@ -1,0 +1,9 @@
+// ----------
+// border-width classes.
+// ----------
+
+$border-unit: 'px' !default;
+
+@for $i from 1 through 5 {
+  @include border-width-variant('.border-width-#{$i}', $i#{$border-unit});
+}

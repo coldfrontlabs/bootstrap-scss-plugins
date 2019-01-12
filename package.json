@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-scss-plugins",
+  "version": "0.1.0",
+  "description": "A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.",
+  "scripts": {
+    "lint": "sass-lint -v -c .sass-lint.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickDJM/bootstrap-scss-plugins.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "scss",
+    "sass"
+  ],
+  "author": "Nick Milton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickDJM/bootstrap-scss-plugins/issues"
+  },
+  "homepage": "https://github.com/NickDJM/bootstrap-scss-plugins#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.12.1"
+  }
+}

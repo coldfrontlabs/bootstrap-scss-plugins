@@ -1,0 +1,18 @@
+// ----------
+// .btn-squared class.
+//
+// Adds .btn-squared classes.
+// ----------
+
+// Generate classes
+.btn-squared {
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, 0);
+
+  &.btn-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, 0);
+  }
+
+  &.btn-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, 0);
+  }
+}

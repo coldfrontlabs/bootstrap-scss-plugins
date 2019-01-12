@@ -1,0 +1,11 @@
+// ----------
+// Mixin to add border-width classes.
+//
+// Creates a selector using the $parent provided and the $value given.
+// ----------
+
+@mixin border-width-variant($parent, $value) {
+  #{$parent} {
+    border-width: $value !important;
+  }
+}
