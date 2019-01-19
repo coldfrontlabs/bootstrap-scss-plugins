@@ -1,11 +1,11 @@
-# Squared Buttons
+# Rounded Buttons
 
-Description
+Squares the corners of buttons to get a 90 degree angle.
 
 ## Default Classes
 
 ```scss
-.class
+.btn-squared
 ```
 
 ## Usage
@@ -13,15 +13,11 @@ Description
 ### Styles
 
 ```scss
-@import 'path/to/node_modules/bootstrap-scss-plugins/scss/plugin';
+@import 'path/to/node_modules/bootstrap-scss-plugins/scss/button-squared';
 ```
 
 ### HTML
 
 ```html
-<p>usage</p>
+<button class="btn btn-squared btn-primary">Click me!</button>
 ```
-
-## Customization
-
-Customizations
