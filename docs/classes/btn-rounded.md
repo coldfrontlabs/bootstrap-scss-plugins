@@ -1,11 +1,11 @@
 # Rounded Buttons
 
-Description
+Rounds the corners of buttons to get a rounded effect
 
 ## Default Classes
 
 ```scss
-.class
+.btn-rounded
 ```
 
 ## Usage
@@ -13,15 +13,11 @@ Description
 ### Styles
 
 ```scss
-@import 'path/to/node_modules/bootstrap-scss-plugins/scss/plugin';
+@import 'path/to/node_modules/bootstrap-scss-plugins/scss/button-rounded';
 ```
 
 ### HTML
 
 ```html
-<p>usage</p>
+<button class="btn btn-rounded btn-primary">Click me!</button>
 ```
-
-## Customization
-
-Customizations
