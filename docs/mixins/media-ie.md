@@ -1,11 +1,16 @@
 # Internet Explorer Media Queries
 
-Description
+Implements the existing breakpoint media queries, but adds a selector for Internet Explorer to all of them.
 
-## Default Classes
+Also adds a simple mixin to target Internet Explorer without any breakpoints.
 
 ```scss
-.class
+media-ie
+
+media-ie-breakpoint-up()
+media-ie-breakpoint-down()
+media-ie-breakpoint-between()
+media-ie-breakpoint-only()
 ```
 
 ## Usage
@@ -16,12 +21,16 @@ Description
 @import 'path/to/node_modules/bootstrap-scss-plugins/scss/plugin';
 ```
 
-### HTML
+```scss
+@include media-ie {
+  ...
+}
 
-```html
-<p>usage</p>
+@include media-ie-breakpoint-up(md) {
+  ...
+}
+
+@include media-ie-only(xl) {
+  ...
+}
 ```
-
-## Customization
-
-Customizations
