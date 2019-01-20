@@ -4,7 +4,7 @@ Outlines text using text shadows.
 
 This class really only exists to provide a slightly better contrast ration when your text doesn't meet colour contrast standards.
 
-## Default Classes
+There is a default text-outline class and one for each colour found in `$theme-colors`.
 
 ```scss
 .text-outline

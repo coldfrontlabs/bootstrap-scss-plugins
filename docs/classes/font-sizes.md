@@ -4,7 +4,7 @@ Sets the size of font used in a specific element.
 
 You can add a breakpoint selector before the size selector for more control.
 
-## Default Classes
+There are font size classes for each `$font-size` variables including the two new variables added by this plguin:
 
 ```scss
 .font-size-xs
@@ -12,37 +12,11 @@ You can add a breakpoint selector before the size selector for more control.
 .font-size-md
 .font-size-lg
 .font-size-xl
-
-.font-size-xs-xs
-.font-size-xs-sm
-.font-size-xs-md
-.font-size-xs-lg
-.font-size-xs-xl
-
-.font-size-sm-xs
-.font-size-sm-sm
-.font-size-sm-md
-.font-size-sm-lg
-.font-size-sm-xl
-
-.font-size-md-xs
-.font-size-md-sm
-.font-size-md-md
-.font-size-md-lg
-.font-size-md-xl
-
-.font-size-lg-xs
-.font-size-lg-sm
-.font-size-lg-md
-.font-size-lg-lg
-.font-size-lg-xl
-
-.font-size-xl-xs
-.font-size-xl-sm
-.font-size-xl-md
-.font-size-xl-lg
-.font-size-xl-xl
 ```
+
+You can also add breakpoints to the classes in the format of `.font-size-[breakpoint]-[size]`.
+
+i.e. `.font-size-sm-lg` which will apply the `.font-size-lg` class on small and larger screens.
 
 ## Usage
 

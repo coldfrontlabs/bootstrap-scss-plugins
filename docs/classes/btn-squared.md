@@ -2,11 +2,7 @@
 
 Squares the corners of buttons to get a 90 degree angle.
 
-## Default Classes
-
-```scss
-.btn-squared
-```
+Simply add the `.btn-squared` class to your existing buttons and the styles will apply.
 
 ## Usage
 

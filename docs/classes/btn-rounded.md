@@ -2,11 +2,7 @@
 
 Rounds the corners of buttons to get a rounded effect
 
-## Default Classes
-
-```scss
-.btn-rounded
-```
+Simply add the `.btn-rounded` class to your existing buttons and the styles will apply.
 
 ## Usage
 

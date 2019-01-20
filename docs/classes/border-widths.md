@@ -2,13 +2,11 @@
 
 Adds a way to specify the width of bordered elements through classes.
 
-## Default Classes
+By default there are 3 classes for border widths:
 
 ```scss
 .border-width-1
-
 .border-width-2
-
 .border-width-3
 ```
 
