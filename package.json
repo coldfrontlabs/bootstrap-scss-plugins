@@ -1,9 +1,10 @@
 {
   "name": "bootstrap-scss-plugins",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.",
   "scripts": {
-    "lint": "sass-lint -v -c .sass-lint.yml"
+    "lint": "sass-lint -v -c .sass-lint.yml",
+    "commit": "npx git cz"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,13 @@
     "bootstrap": "^4.2.1"
   },
   "devDependencies": {
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "sass-lint": "^1.12.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
