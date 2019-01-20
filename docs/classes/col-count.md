@@ -1,12 +1,17 @@
 # Column Count
 
-Description
+Sets the number of columns a card column group has.
 
 ## Default Classes
 
-```scss
-.class
-```
+There is a class for each column in `$grid-columns`:
+
+`.col-count-1` through `.col-count-12`
+
+You can also add breakpoints to the `.col-count` classes:
+
+- `.col-count-md-1`
+- `.col-count-xl-3`
 
 ## Usage
 
@@ -19,9 +24,22 @@ Description
 ### HTML
 
 ```html
-<p>usage</p>
+<div class="card-columns col-count-4 col-count-sm-2">
+  <div class="card">
+    ...
+  </div>
+  <div class="card">
+    ...
+  </div>
+  <div class="card">
+    ...
+  </div>
+  <div class="card">
+    ...
+  </div>
+</div>
 ```
 
 ## Customization
 
-Customizations
+Changing the `$grid-columns` variable will change the number of `.col-count` classes available.
