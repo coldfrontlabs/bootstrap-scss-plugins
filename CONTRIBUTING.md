@@ -13,10 +13,11 @@ All code changes happen through pull requests.
 Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests:
 
 1. Fork the repo and create your branch from dev.
-2. If you've added or changed plugins, update the documentation.
-3. Make sure your code compiles.
-4. Make sure your code lints.
-5. Issue the pull request!
+2. Link your pull request to any relavent open issues.
+3. If you've added or changed plugins, update the documentation.
+3. Make sure your code compiles. Write a test if you have to!
+5. Make sure your code lints.
+6. Issue the pull request!
 
 ## Any contribution you make will be under the ISC License
 
