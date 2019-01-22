@@ -1,6 +1,7 @@
 files:
   include:
     - 'scss/**/*.scss'
+    - 'test/**/*.scss'
 syntax:
     include:
       - scss
