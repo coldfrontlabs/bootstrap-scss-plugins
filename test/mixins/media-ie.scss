@@ -2,4 +2,25 @@
 // media-ie mixin plugin.
 // ----------
 
-@import './mixins/media-ie';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../scss/media-ie';
+
+@include media-ie {
+  color: $primary;
+}
+
+@include media-ie-breakpoint-between(md, lg) {
+  color: $secondary;
+}
+
+@include media-ie-breakpoint-down(md) {
+  color: $success;
+}
+
+@include media-ie-breakpoint-only(xl) {
+  color: $danger;
+}
+
+@include media-ie-breakpoint-up(md) {
+  color: $warning;
+}

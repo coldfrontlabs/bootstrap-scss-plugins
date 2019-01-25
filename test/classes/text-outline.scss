@@ -7,5 +7,5 @@
 // It should really only be used if you have no other way around fixing the contrast.
 // ----------
 
-@import './mixins/text-outline';
-@import './utilities/text-outline';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../scss/text-outline';

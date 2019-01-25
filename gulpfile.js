@@ -43,6 +43,9 @@ lintMixins.description = 'Lints all mixin tests.';
 const lintOther = () => lintSass('./test/other/**/*.scss');
 lintOther.description = 'Lints all other tests.';
 
+const lintSource = () => lintSass('./scss/**/*.scss');
+lintSource.description = 'Lints all source files.';
+
 /**
  * Set compiling tests.
  */
@@ -94,6 +97,8 @@ gulp.task(compile);
 gulp.task('lint:classes', lintClasses);
 gulp.task('lint:mixins', lintMixins);
 gulp.task('lint:other', lintOther);
+
+gulp.task('lint:source', lintSource);
 
 gulp.task('compile:classes', compileClasses);
 gulp.task('compile:mixins', compileMixins);
