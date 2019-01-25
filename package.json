@@ -1,14 +1,16 @@
 {
   "name": "bootstrap-scss-plugins",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.",
+  "eslintConfig": "./.eslintrc.js",
   "scripts": {
     "lint": "sass-lint -v -c .sass-lint.yml",
+    "eslint": "eslint ./**/*.js",
     "commit": "npx git cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NickDJM/bootstrap-scss-plugins.git"
+    "url": "git+https://github.com/coldfrontlabs/bootstrap-scss-plugins.git"
   },
   "keywords": [
     "bootstrap",
@@ -18,15 +20,19 @@
   "author": "Nick Milton",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NickDJM/bootstrap-scss-plugins/issues"
+    "url": "https://github.com/coldfrontlabs/bootstrap-scss-plugins/issues"
   },
-  "homepage": "https://github.com/NickDJM/bootstrap-scss-plugins#readme",
+  "homepage": "https://github.com/coldfrontlabs/bootstrap-scss-plugins#readme",
   "dependencies": {
     "bootstrap": "^4.2.1"
   },
   "devDependencies": {
     "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.12.1",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
     "sass-lint": "^1.12.1"
   },
   "config": {
