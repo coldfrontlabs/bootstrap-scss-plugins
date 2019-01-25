@@ -15,7 +15,7 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 1. Fork the repo and create your branch from dev.
 2. Link your pull request to any relavent open issues.
 3. If you've added or changed plugins, update the documentation.
-3. Make sure your code compiles. Write a test if you have to!
+4. Make sure your code compiles. Write a test if you have to!
 5. Make sure your code lints.
 6. Issue the pull request!
 
