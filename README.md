@@ -42,6 +42,7 @@ For more detailed usage of each plugin, please see the docs.
 - `.o-n`: Sets the opacity of an element. - [Full documentation](docs/classes/opacity.md)
 - `.sr-x-only`: Breakpoint selectors for the `.sr-only` class - [Full documentation](docs/classes/sr-breakpoints.md)
 - `.text-outline`: Outlines text. - [Full documentation](docs/classes/text-outline.md)
+- `.sr-x-only`: Breakpoint selectors for the `.sr-only` class - [Full documentation](docs/classes/screen-reader-breakpoints.md)
 
 ## Mixins
 
