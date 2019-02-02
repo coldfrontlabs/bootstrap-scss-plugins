@@ -1,15 +1,15 @@
 # Screen Reader Breakpoints
 
-Extends the vanilla Bootstrap `.sr-only` and `.sr-only-focussable` classes to function with media-breakpoint mixins.
+Extends the vanilla Bootstrap `.sr-only` and `.sr-only-focusable` classes to function with media-breakpoint mixins.
 
 ```scss
 .sr-md-only
 .sr-md-up
 .sr-md-down
 
-.sr-md-only-focussable
-.sr-md-up-focussable
-.sr-md-down-focussable
+.sr-md-only-focusable
+.sr-md-up-focusable
+.sr-md-down-focusable
 ```
 
 ## Usage
