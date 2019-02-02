@@ -39,6 +39,7 @@ For more detailed usage of each plugin, please see the docs.
 - `.col-count-n`: Sets the column count of groups. - [Full documentation](docs/classes/col-count.md)
 - `.font-size-x`: Sets the font size of text. - [Full documentation](docs/classes/font-sizes.md)
 - `.text-outline`: Outlines text. - [Full documentation](docs/classes/text-outline.md)
+- `.sr-x-only`: Breakpoint selectors for the `.sr-only` class - [Full documentation](docs/classes/screen-reader-breakpoints.md)
 
 ## Mixins
 
