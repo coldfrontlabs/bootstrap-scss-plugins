@@ -9,4 +9,8 @@
 
     @include transparent-background-variant($class, $hex, $value);
   }
+
+  // Add classes for 25% and 75%.
+  @include transparent-background-variant('.bg-#{$name}-25', $hex, .25);
+  @include transparent-background-variant('.bg-#{$name}-75', $hex, .75);
 }
