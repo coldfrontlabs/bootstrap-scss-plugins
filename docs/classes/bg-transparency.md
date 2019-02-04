@@ -25,7 +25,7 @@ Adds 11 variants for each background colour.
 ### Styles
 
 ```scss
-@import 'path/to/node_modules/bootstrap-scss-plugins/scss/transparent-backgrounds.scss';
+@import 'path/to/node_modules/bootstrap-scss-plugins/scss/transparent-backgrounds';
 ```
 
 ### HTML
