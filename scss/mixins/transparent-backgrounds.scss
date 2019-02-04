@@ -4,7 +4,7 @@
 // Creates a selector based on the $parent provided and the $colour and $value given.
 // ----------
 
-// sass-lint:disable-line no-color-literals
+// sass-lint:disable no-color-literals
 
 @mixin transparent-background-variant($parent, $colour, $value) {
   #{$parent} {
