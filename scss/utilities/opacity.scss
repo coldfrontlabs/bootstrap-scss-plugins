@@ -1,0 +1,14 @@
+// ----------
+// Opacity classes.
+// ----------
+
+@for $x from 1 to 10 {
+  $class: '.o-#{($x * 10)}';
+  $value: $x / 10;
+
+  @include opacity-variant($class, $value);
+}
+
+// Add classes for 25% and 75%.
+@include opacity-variant('.o-25', .25);
+@include opacity-variant('.o-75', .75);
