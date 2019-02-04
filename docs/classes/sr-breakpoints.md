@@ -2,6 +2,14 @@
 
 Extends the vanilla Bootstrap `.sr-only` and `.sr-only-focusable` classes to function with media-breakpoint mixins.
 
+The classes follow the pattern `sr-[breakpoint]-[query-type]` and `sr-[breakpoint]-[query-type]-focusable`.
+
+The query types use the provided media queries aside from the "between" query:
+
+- `only`: to target only the selected breakpoint
+- `up`: to target the selected breakpoint and anything larger
+- `down`: to target the select breakpoint and anything smaller
+
 ```scss
 .sr-md-only
 .sr-md-up

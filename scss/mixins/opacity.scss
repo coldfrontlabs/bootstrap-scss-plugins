@@ -1,0 +1,11 @@
+// ----------
+// Mixin to add opacity classes.
+//
+// Creates a selector based on the $parent provided and the $value given.
+// ----------
+
+@mixin opacity-variant($parent, $value) {
+  #{$parent} {
+    opacity: $value;
+  }
+}
