@@ -40,7 +40,7 @@ For more detailed usage of each plugin, please see the docs.
 - `.font-size-x`: Sets the font size of text. - [Full documentation](docs/classes/font-sizes.md)
 - `.text-outline`: Outlines text. - [Full documentation](docs/classes/text-outline.md)
 - `.sr-x-only`: Breakpoint selectors for the `.sr-only` class - [Full documentation](docs/classes/sr-breakpoints.md)
-- `.bg-colour-n`: Sets background colours with transparency - [Full documentation](docs/class/transparent-backgrounds.md)
+- `.bg-colour-n`: Sets background colours with transparency - [Full documentation](docs/class/bg-transparency.md)
 
 ## Mixins
 
