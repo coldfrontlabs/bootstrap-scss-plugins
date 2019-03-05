@@ -41,12 +41,12 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
   - why you think this might be happening
   - stuff you tried that didn't work
 
-Everynody loves a thorough bug report!
+Everybody loves a thorough bug report!
 
 ## Keep Your Code Consistent
 
 - Use the standards provided by the lint file. Run `npm run lint` to be sure.
-- Keep mixins in the mixins directory, utilities in the utilities directory, and plugins in the root scss directory.
+- Keep mixins in the `mixins/` directory, utilities in the `utilities/` directory, and plugins in the root `scss/` directory.
 - Try to use what is provided in "Vanilla" Bootstrap 4
 
 ## Commit Guidelines
