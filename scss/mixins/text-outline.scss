@@ -5,11 +5,13 @@
 // ----------
 
 @mixin text-outline-variant ($parent, $colour, $width) {
+  $negative-width: -#{$width};
+
   #{$parent} {
     text-shadow:
-    -$width -$width 0 $colour,
-    $width -$width 0 $colour,
-    -$width $width 0 $colour,
+    $negative-width $negative-width 0 $colour,
+    $width $negative-width 0 $colour,
+    $negative-width $width 0 $colour,
     $width $width 0 $colour !important;
   }
 }
