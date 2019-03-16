@@ -27,7 +27,7 @@ There are a couple ways to use the plugins, but all steps begin with importing t
 @import 'path/to/node_modules/bootstrap-scss-plugins/scss/font-sizes';
 ```
 
-Once you have imported all the files you need, you can simply use the classes and mixins are you would any other Bootstrap feature.
+Once you have imported all the files you need, you can simply use the classes and mixins as you would any other Bootstrap feature.
 
 For more detailed usage of each plugin, please see the docs.
 
