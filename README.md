@@ -33,20 +33,20 @@ For more detailed usage of each plugin, please see the docs.
 
 ## Classes
 
-- `.bg-colour-n`: Sets background colours with transparency - [Full documentation](docs/class/bg-transparency.md)
-- `.border-width-n`: Sets the width of borders. - [Full documentation](docs/classes/border-widths.md)
-- `.btn-rounded`: Rounds the corners of buttons. - [Full documentation](docs/classes/btn-rounded.md)
-- `.btn-squared`: Squares off the corners of buttons. - [Full documentation](docs/classes/btn-squared.md)
-- `.col-count-n`: Sets the column count of groups. - [Full documentation](docs/classes/col-count.md)
-- `.font-size-x`: Sets the font size of text. - [Full documentation](docs/classes/font-sizes.md)
-- `.o-n`: Sets the opacity of an element. - [Full documentation](docs/classes/opacity.md)
-- `.sr-x-only`: Breakpoint selectors for the `.sr-only` class - [Full documentation](docs/classes/sr-breakpoints.md)
-- `.text-outline`: Outlines text. - [Full documentation](docs/classes/text-outline.md)
+- [Transparent backgrounds](docs/class/bg-transparency.md)
+- [Border widths](docs/classes/border-widths.md)
+- [Rounded buttons](docs/classes/btn-rounded.md)
+- [Squared buttons](docs/classes/btn-squared.md)
+- [Card group column count](docs/classes/col-count.md)
+- [Font sizes](docs/classes/font-sizes.md)
+- [Opacity](docs/classes/opacity.md)
+- [Screen reader breakpoints](docs/classes/sr-breakpoints.md)
+- [Text outline](docs/classes/text-outline.md)
 
 ## Mixins
 
-- `media-ie`: Media queries to for Internet Explorer. - [Full documentation](docs/mixins/media-ie.md)
+- [IE media queries](docs/mixins/media-ie.md)
 
 ## Other Features
 
-- Responsive typography - [Full documentation](docs/other/responsive-typography.md)
+- [Responsive typography](docs/other/responsive-typography.md)
