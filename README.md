@@ -1,5 +1,9 @@
 # bootstrap-scss-plugins
 
+[![NPM Version](https://img.shields.io/npm/v/bootstrap-scss-plugins.svg?style=for-the-badge)](https://www.npmjs.org/package/stylelint-config-property-sort-order-smacss)
+[![NPM Downloads](https://img.shields.io/npm/dt/bootstrap-scss-plugins.svg?style=for-the-badge)](https://www.npmjs.com/package/bootstrap-scss-plugins)
+[![License](https://img.shields.io/github/license/coldfrontlabs/bootstrap-scss-plugins.svg?style=for-the-badge)](/LICENSE)
+
 A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.
 
 This package aims to add a few useful classes and mixins, not found in "vanilla" Bootstrap 4, to help speed up the development of websites.
