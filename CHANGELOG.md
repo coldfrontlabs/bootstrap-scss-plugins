@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- Clean up documentation (specifically in the main readme)
+
 ## 1.1.1
 
 - Fix issue causing text-shadow classes to look offset
