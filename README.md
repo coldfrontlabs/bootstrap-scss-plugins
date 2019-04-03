@@ -1,6 +1,6 @@
 # bootstrap-scss-plugins
 
-[![NPM Version](https://img.shields.io/npm/v/bootstrap-scss-plugins.svg?style=for-the-badge)](https://www.npmjs.org/package/stylelint-config-property-sort-order-smacss)
+[![NPM Version](https://img.shields.io/npm/v/bootstrap-scss-plugins.svg?style=for-the-badge)](https://www.npmjs.org/package/bootstrap-scss-plugins)
 [![NPM Downloads](https://img.shields.io/npm/dt/bootstrap-scss-plugins.svg?style=for-the-badge)](https://www.npmjs.com/package/bootstrap-scss-plugins)
 [![License](https://img.shields.io/github/license/coldfrontlabs/bootstrap-scss-plugins.svg?style=for-the-badge)](/LICENSE)
 
