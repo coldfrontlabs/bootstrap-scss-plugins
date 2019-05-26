@@ -4,8 +4,9 @@
   "description": "A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.",
   "eslintConfig": "./.eslintrc.js",
   "scripts": {
-    "lint": "sass-lint -v -c .sass-lint.yml",
-    "eslint": "eslint ./**/*.js",
+    "lint": "npm run lint:styles && npm run lint:scripts",
+    "lint:styles": "sass-lint -v -c .sass-lint.yml",
+    "lint:scripts": "eslint --ext .js .",
     "commit": "npx git cz"
   },
   "repository": {
@@ -25,6 +26,8 @@
   "homepage": "https://github.com/coldfrontlabs/bootstrap-scss-plugins#readme",
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
     "bootstrap": "^4.2.1",
     "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
@@ -32,6 +35,7 @@
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sass-lint": "^1.4.0",
+    "husky": "^2.3.0",
     "sass-lint": "^1.12.1"
   },
   "peerDependencies": {
@@ -40,6 +44,12 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint"
     }
   }
 }
