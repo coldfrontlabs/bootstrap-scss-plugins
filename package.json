@@ -3,11 +3,14 @@
   "version": "1.1.2",
   "description": "A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.",
   "scripts": {
+    "pre-commit": "npm run lint && npm run test",
     "lint": "npm run lint:styles && npm run lint:scripts",
     "lint:styles": "npx gulp lint",
     "lint:styles:fix": "npx gulp fix",
     "lint:scripts": "npx eslint --ext .js .",
     "lint:scripts:fix": "npx eslint --ext .js . --fix",
+    "test": "npm run test:compile",
+    "test:compile": "npx gulp compile",
     "commit": "npx git cz"
   },
   "repository": {
@@ -81,7 +84,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint"
+      "pre-commit": "echo committing as $(git config user.name) && npm run pre-commit"
     }
   }
 }
