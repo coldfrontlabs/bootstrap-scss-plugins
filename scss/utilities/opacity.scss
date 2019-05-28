@@ -1,6 +1,6 @@
-// ----------
-// Opacity classes.
-// ----------
+/**
+ * Opacity classes.
+ */
 
 @for $x from 1 to 10 {
   $class: '.o-#{($x * 10)}';

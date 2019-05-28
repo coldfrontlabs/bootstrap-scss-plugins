@@ -1,11 +1,11 @@
-// ----------
-// Compile test for media-ie mixins.
-// ----------
+/**
+ * Compile test for media-ie mixins.
+ */
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import '../../scss/media-ie';
 
-@include media-ie {
+@include media-ie() {
   color: $primary;
 }
 

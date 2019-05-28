@@ -1,9 +1,9 @@
-// ----------
-// Mixin to add font-size classes.
-//
-// Creates a selector based on the $parent and $child provided and the $value given.
-// Also generates selectors based on $grid-brakpoints for different screen sizes.
-// ----------
+/**
+ * Mixin to add font-size classes.
+ *
+ * Creates a selector based on the $parent and $child provided and the $value given.
+ * Also generates selectors based on $grid-brakpoints for different screen sizes.
+ */
 
 @mixin font-size-variant($parent, $child, $value) {
   #{$parent} {

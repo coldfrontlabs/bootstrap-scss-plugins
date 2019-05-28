@@ -1,6 +1,6 @@
-//----------
-// Mixins to detect IE.
-//----------
+/**
+ * Mixins to detect IE.
+ */
 
 // Internet Explorer 10+ check.
 @mixin media-ie {
@@ -13,6 +13,7 @@
 // Makes the @content apply to the given breakpoint and wider.
 @mixin media-ie-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
   $min: breakpoint-min($name, $breakpoints);
+
   @if $min {
     @media (min-width: $min) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       @content;
@@ -26,6 +27,7 @@
 // Makes the @content apply to the given breakpoint and narrower.
 @mixin media-ie-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
   $max: breakpoint-max($name, $breakpoints);
+
   @if $max {
     @media (max-width: $max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       @content;

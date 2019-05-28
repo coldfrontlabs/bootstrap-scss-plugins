@@ -1,9 +1,9 @@
-// ----------
-// Mixin to add column-count classes.
-//
-// Creates a selector using the $parent provided and the $value given.
-// Also generates selectors based on $grid-brakpoints for different screen sizes.
-// ----------
+/**
+ * Mixin to add column-count classes.
+ *
+ * Creates a selector using the $parent provided and the $value given.
+ * Also generates selectors based on $grid-brakpoints for different screen sizes.
+ */
 
 @mixin column-count-variant($parent, $value) {
   #{$parent} {

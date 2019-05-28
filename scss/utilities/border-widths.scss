@@ -1,7 +1,8 @@
-// ----------
-// border-width classes.
-// ----------
+/**
+ * border-width classes.
+ */
 
+// Declare default variables.
 $border-width-unit: 'px' !default;
 $border-width-min: 1 !default;
 $border-width-max: 3 !default;
