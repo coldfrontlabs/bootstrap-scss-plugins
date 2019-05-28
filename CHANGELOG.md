@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3
+
+- Fix issue causing border-width classes to generate invalid css when using dart-sass ([#49](https://github.com/coldfrontlabs/bootstrap-scss-plugins/issues/49))
+
 ## 1.1.2
 
 - Clean up documentation (specifically in the main readme)
