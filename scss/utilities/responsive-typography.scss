@@ -1,13 +1,13 @@
-// ----------
-// Responsize typography settings.
-//
-// Changes the typography to react responsively based on screen size.
-//
-// Set $enable-responsize-typography to activate.
-// ----------
+/**
+ * Responsize typography settings.
+ *
+ * Changes the typography to react responsively based on screen size.
+ *
+ * Set $enable-responsize-typography to activate.
+ */
 
+// Declare default variables.
 $enable-responsive-typography: false !default;
-
 $responsive-typography-base: $font-size-base !default;
 $responsive-typography-sm: $responsive-typography-base * 1.1 !default;
 $responsive-typography-md: $responsive-typography-base * 1.2 !default;

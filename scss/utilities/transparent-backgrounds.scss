@@ -1,6 +1,6 @@
-// ----------
-// Transparent background classes.
-// ----------
+/**
+ * Transparent background classes.
+ */
 
 @each $name, $hex in $theme-colors {
   @for $x from 1 to 10 {

@@ -2,10 +2,15 @@
   "name": "bootstrap-scss-plugins",
   "version": "1.1.2",
   "description": "A suite of SCSS plugins used for developing Bootstrap 4 themes and sites.",
-  "eslintConfig": "./.eslintrc.js",
   "scripts": {
-    "lint": "sass-lint -v -c .sass-lint.yml",
-    "eslint": "eslint ./**/*.js",
+    "pre-commit": "npm run lint && npm run test",
+    "lint": "npm run lint:styles && npm run lint:scripts",
+    "lint:styles": "npx gulp lint",
+    "lint:styles:fix": "npx gulp fix",
+    "lint:scripts": "npx eslint --ext .js .",
+    "lint:scripts:fix": "npx eslint --ext .js . --fix",
+    "test": "npm run test:compile",
+    "test:compile": "npx gulp compile",
     "commit": "npx git cz"
   },
   "repository": {
@@ -25,14 +30,20 @@
   "homepage": "https://github.com/coldfrontlabs/bootstrap-scss-plugins#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "@coldfrontlabs/gulp-templates": "^1.1.0",
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
     "bootstrap": "^4.2.1",
     "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.12.1",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sass-lint": "^1.4.0",
-    "sass-lint": "^1.12.1"
+    "husky": "^2.3.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-coldfront": "^1.0.0"
   },
   "peerDependencies": {
     "bootstrap": "^4.2.0"
@@ -40,6 +51,40 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended"
+    ],
+    "env": {
+      "es6": "true",
+      "node": "true"
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "stylelint": {
+    "root": "true",
+    "extends": [
+      "stylelint-config-coldfront"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "echo committing as $(git config user.name) && npm run pre-commit"
     }
   }
 }

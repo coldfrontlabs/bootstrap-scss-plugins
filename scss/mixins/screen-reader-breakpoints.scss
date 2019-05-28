@@ -1,41 +1,41 @@
-// ----------
-// Screen reader breakpoint mixins.
-// ----------
+/**
+ * Screen reader breakpoint mixins.
+ */
 
 @each $breakpoint, $value in $grid-breakpoints {
   .sr-#{$breakpoint}-only {
     @include media-breakpoint-only($breakpoint) {
-      @include sr-only;
+      @include sr-only();
     }
   }
 
   .sr-#{$breakpoint}-up {
     @include media-breakpoint-up($breakpoint) {
-      @include sr-only;
+      @include sr-only();
     }
   }
 
   .sr-#{$breakpoint}-down {
     @include media-breakpoint-down($breakpoint) {
-      @include sr-only;
+      @include sr-only();
     }
   }
 
   .sr-#{$breakpoint}-only-focusable {
     @include media-breakpoint-only($breakpoint) {
-      @include sr-only-focusable;
+      @include sr-only-focusable();
     }
   }
 
   .sr-#{$breakpoint}-up-focusable {
     @include media-breakpoint-up($breakpoint) {
-      @include sr-only-focusable;
+      @include sr-only-focusable();
     }
   }
 
   .sr-#{$breakpoint}-down-focusable {
     @include media-breakpoint-down($breakpoint) {
-      @include sr-only-focusable;
+      @include sr-only-focusable();
     }
   }
 }
