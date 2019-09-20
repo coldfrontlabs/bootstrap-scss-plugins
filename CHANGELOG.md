@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 - Overhaul changelog
+- Update dependencies to latest
 
 ## [1.1.4] - 2019-07-19
 ### Changed
