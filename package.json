@@ -6,7 +6,6 @@
     "scss/"
   ],
   "scripts": {
-    "pre-commit": "npm run lint && npm run test",
     "lint": "npm run lint:styles && npm run lint:scripts",
     "lint:styles": "npx gulp lint",
     "lint:styles:fix": "npx gulp fix",
@@ -43,6 +42,13 @@
     "commitizen": "^4.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "gulp": "~4.0.0",
     "gulp-eslint": "~6.0.0",
     "husky": "^4.3.0",
@@ -56,40 +62,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended"
-    ],
-    "env": {
-      "es6": "true",
-      "node": "true"
-    },
-    "parserOptions": {
-      "sourceType": "module"
-    }
-  },
-  "stylelint": {
-    "root": "true",
-    "extends": [
-      "stylelint-config-coldfront"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "echo committing as $(git config user.name) && npm run pre-commit"
     }
   }
 }
