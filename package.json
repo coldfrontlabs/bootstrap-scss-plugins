@@ -13,6 +13,8 @@
     "lint:scripts:fix": "npx eslint --ext .js . --fix",
     "test": "npm run test:compile",
     "test:compile": "npx gulp compile",
+    "prerelease": "npm run lint && npm test",
+    "release": "npx standard-version",
     "commit": "npx git cz"
   },
   "repository": {
@@ -53,6 +55,7 @@
     "gulp-eslint": "~6.0.0",
     "husky": "^4.3.0",
     "prettier": "^2.1.1",
+    "standard-version": "^9.0.0",
     "stylelint": "^13.7.0",
     "stylelint-config-coldfront": "^2.0.1"
   },
