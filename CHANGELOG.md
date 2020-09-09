@@ -1,9 +1,16 @@
 # Changelog
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [Unreleased]
+### [1.1.6](https://github.com/coldfrontlabs/bootstrap-scss-plugins/compare/v1.1.5...v1.1.6) (2020-09-09)
+
+
+### Build System
+
+* **npm:** add standard-version to handle releases ([0f4b365](https://github.com/coldfrontlabs/bootstrap-scss-plugins/commit/0f4b365cc9f4e4463124711a068b47ca71d899dd))
+* split out config into separate js files ([2c7b08a](https://github.com/coldfrontlabs/bootstrap-scss-plugins/commit/2c7b08a19eb097106d18390b58270e792b44010d))
+* **npm:** disallow .files from being packaged ([c664edd](https://github.com/coldfrontlabs/bootstrap-scss-plugins/commit/c664eddb9a1dcd98cd6a563aa08e44b9b13b6bc4))
+* **npm:** run security updates and package upgrades ([1164364](https://github.com/coldfrontlabs/bootstrap-scss-plugins/commit/1164364e95d2c7ff644b987fe70476a691caef9b))
 
 ## [1.1.5] - 2019-09-20
 ### Changed
