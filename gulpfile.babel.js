@@ -18,7 +18,7 @@ const paths = {
  *
  * @returns {Object} - Gulp stream.
  */
-export const lintSource = () => sass.lint(`${paths.source.src}/${paths.selector}`)
+export const lintSource = () => sass.lint({ source: `${paths.source.src}/${paths.selector}` })
 lintSource.description = 'Lints all source Sass files.'
 
 /**
@@ -26,7 +26,7 @@ lintSource.description = 'Lints all source Sass files.'
  *
  * @returns {Object} - Gulp stream.
  */
-export const fixSource = () => sass.fix(`${paths.source.src}/${paths.selector}`)
+export const fixSource = () => sass.fix({ source: `${paths.source.src}/${paths.selector}` })
 fixSource.description = 'Lints and fixes all source Sass files.'
 
 /**
@@ -34,7 +34,7 @@ fixSource.description = 'Lints and fixes all source Sass files.'
  *
  * @returns {Object} - Gulp stream.
  */
-export const lintTests = () => sass.lint(`${paths.test.src}/${paths.selector}`)
+export const lintTests = () => sass.lint({ source: `${paths.test.src}/${paths.selector}` })
 lintTests.description = 'Lints all test Sass files.'
 
 
@@ -43,7 +43,7 @@ lintTests.description = 'Lints all test Sass files.'
  *
  * @returns {Object} - Gulp stream.
  */
-export const fixTests = () => sass.fix(`${paths.test.src}/${paths.selector}`)
+export const fixTests = () => sass.fix({ source: `${paths.test.src}/${paths.selector}` })
 fixTests.description = 'Lints and fixes all test Sass files.'
 
 /**
@@ -51,7 +51,7 @@ fixTests.description = 'Lints and fixes all test Sass files.'
  *
  * @returns {Object} - Gulp stream.
  */
-export const compileClass = () => sass.compile(`${paths.test.src}/classes/${paths.selector}`, `${paths.test.src}/classes/results`)
+export const compileClass = () => sass.compile({ source: `${paths.test.src}/classes/${paths.selector}`, destination: `${paths.test.src}/classes/results` })
 compileClass.description = 'Compiles all class test Sass files.'
 
 /**
@@ -59,7 +59,7 @@ compileClass.description = 'Compiles all class test Sass files.'
  *
  * @returns {Object} - Gulp stream.
  */
-export const compileMixin = () => sass.compile(`${paths.test.src}/mixins/${paths.selector}`, `${paths.test.src}/mixins/results`)
+export const compileMixin = () => sass.compile({ source: `${paths.test.src}/mixins/${paths.selector}`, destination: `${paths.test.src}/mixins/results` })
 compileMixin.description = 'Compiles all mixin test Sass files.'
 
 /**
@@ -67,7 +67,7 @@ compileMixin.description = 'Compiles all mixin test Sass files.'
  *
  * @returns {Object} - Gulp stream.
  */
-export const compileOther = () => sass.compile(`${paths.test.src}/other/${paths.selector}`, `${paths.test.src}/other/results`)
+export const compileOther = () => sass.compile({ source: `${paths.test.src}/other/${paths.selector}`, destination: `${paths.test.src}/other/results` })
 compileOther.description = 'Compiles all other test Sass files.'
 
 /**
