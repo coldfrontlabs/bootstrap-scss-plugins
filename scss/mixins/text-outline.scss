@@ -8,10 +8,8 @@
   $negative-width: -#{$width};
 
   #{$parent} {
-    text-shadow:
-      $negative-width $negative-width 0 $colour,
-      $width $negative-width 0 $colour,
-      $negative-width $width 0 $colour,
+    text-shadow: $negative-width $negative-width 0 $colour,
+      $width $negative-width 0 $colour, $negative-width $width 0 $colour,
       $width $width 0 $colour !important;
   }
 }

@@ -3,12 +3,12 @@
  */
 
 // Add new font-size variables.
-$font-size-xs: $font-size-base * .75 !default;
+$font-size-xs: $font-size-base * 0.75 !default;
 $font-size-xl: $font-size-base * 1.5 !default;
 
 // Generate classes.
-@include font-size-variant('.font-size', 'xs', $font-size-xs);
-@include font-size-variant('.font-size', 'sm', $font-size-sm);
-@include font-size-variant('.font-size', 'md', $font-size-base);
-@include font-size-variant('.font-size', 'lg', $font-size-lg);
-@include font-size-variant('.font-size', 'xl', $font-size-xl);
+@include font-size-variant(".font-size", "xs", $font-size-xs);
+@include font-size-variant(".font-size", "sm", $font-size-sm);
+@include font-size-variant(".font-size", "md", $font-size-base);
+@include font-size-variant(".font-size", "lg", $font-size-lg);
+@include font-size-variant(".font-size", "xl", $font-size-xl);

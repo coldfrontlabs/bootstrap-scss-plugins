@@ -6,9 +6,13 @@
 $text-outline-width: 1px !default;
 
 // Generate basic class.
-@include text-outline-variant('.text-outline', $black, $text-outline-width);
+@include text-outline-variant(".text-outline", $black, $text-outline-width);
 
 // Generate theme classes.
 @each $colour, $value in $theme-colors {
-  @include text-outline-variant('.text-outline-#{$colour}', theme-color-level(#{$colour}, 8), $text-outline-width);
+  @include text-outline-variant(
+    ".text-outline-#{$colour}",
+    theme-color-level(#{$colour}, 8),
+    $text-outline-width
+  );
 }

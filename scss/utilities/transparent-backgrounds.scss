@@ -4,13 +4,13 @@
 
 @each $name, $hex in $theme-colors {
   @for $x from 1 to 10 {
-    $class: '.bg-#{$name}-#{($x * 10)}';
+    $class: ".bg-#{$name}-#{($x * 10)}";
     $value: $x / 10;
 
     @include transparent-background-variant($class, $hex, $value);
   }
 
   // Add classes for 25% and 75%.
-  @include transparent-background-variant('.bg-#{$name}-25', $hex, .25);
-  @include transparent-background-variant('.bg-#{$name}-75', $hex, .75);
+  @include transparent-background-variant(".bg-#{$name}-25", $hex, 0.25);
+  @include transparent-background-variant(".bg-#{$name}-75", $hex, 0.75);
 }

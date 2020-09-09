@@ -3,10 +3,13 @@
  */
 
 // Declare default variables.
-$border-width-unit: 'px' !default;
+$border-width-unit: "px" !default;
 $border-width-min: 1 !default;
 $border-width-max: 3 !default;
 
 @for $i from $border-width-min through $border-width-max {
-  @include border-width-variant('.border-width-#{$i}', #{$i}#{$border-width-unit});
+  @include border-width-variant(
+    ".border-width-#{$i}",
+    #{$i}#{$border-width-unit}
+  );
 }

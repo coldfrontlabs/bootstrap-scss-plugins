@@ -15,7 +15,8 @@
   $min: breakpoint-min($name, $breakpoints);
 
   @if $min {
-    @media (min-width: $min) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media (min-width: $min) and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
       @content;
     }
   } @else {
@@ -29,7 +30,8 @@
   $max: breakpoint-max($name, $breakpoints);
 
   @if $max {
-    @media (max-width: $max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media (max-width: $max) and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
       @content;
     }
   } @else {
@@ -39,12 +41,17 @@
 
 // Media that spans multiple breakpoint widths.
 // Makes the @content apply between the min and max breakpoints
-@mixin media-ie-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+@mixin media-ie-breakpoint-between(
+  $lower,
+  $upper,
+  $breakpoints: $grid-breakpoints
+) {
   $min: breakpoint-min($lower, $breakpoints);
   $max: breakpoint-max($upper, $breakpoints);
 
   @if $min != null and $max != null {
-    @media (min-width: $min) and (max-width: $max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media (min-width: $min) and (max-width: $max) and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
       @content;
     }
   } @else if $max == null {
@@ -66,7 +73,8 @@
   $max: breakpoint-max($name, $breakpoints);
 
   @if $min != null and $max != null {
-    @media (min-width: $min) and (max-width: $max) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media (min-width: $min) and (max-width: $max) and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
       @content;
     }
   } @else if $max == null {

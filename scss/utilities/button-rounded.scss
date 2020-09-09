@@ -6,13 +6,31 @@
 
 // Generate classes
 .btn-rounded {
-  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-font-size * 1.2);
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    $btn-font-size,
+    $btn-line-height,
+    $btn-font-size * 1.2
+  );
 
   &.btn-lg {
-    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-font-size-lg * 1.2);
+    @include button-size(
+      $btn-padding-y-lg,
+      $btn-padding-x-lg,
+      $btn-font-size-lg,
+      $btn-line-height-lg,
+      $btn-font-size-lg * 1.2
+    );
   }
 
   &.btn-sm {
-    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-font-size-sm * 1.2);
+    @include button-size(
+      $btn-padding-y-sm,
+      $btn-padding-x-sm,
+      $btn-font-size-sm,
+      $btn-line-height-sm,
+      $btn-font-size-sm * 1.2
+    );
   }
 }
