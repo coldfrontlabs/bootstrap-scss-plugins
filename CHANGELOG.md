@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.7](https://github.com/coldfrontlabs/bootstrap-scss-plugins/compare/v1.1.6...v1.1.7) (2021-09-27)
+
+
+### Build System
+
+* **npm:** update all packages to resolve vulnerabilities ([0680354](https://github.com/coldfrontlabs/bootstrap-scss-plugins/commit/0680354a5179f8aec258a7b9e9dc49806343f699))
+
+
+### Documentation
+
+* deprecate project ([6d14d9c](https://github.com/coldfrontlabs/bootstrap-scss-plugins/commit/6d14d9c57929531b369170b0d238b30c65923de0))
+
 ### [1.1.6](https://github.com/coldfrontlabs/bootstrap-scss-plugins/compare/v1.1.5...v1.1.6) (2020-09-09)
 
 
