@@ -1,5 +1,7 @@
 # bootstrap-scss-plugins
 
+> This project is now deprecated and will not recieve any more updates since most features provided by this project can now be found in Bootstrap 4.6.
+
 [![NPM Version](https://img.shields.io/npm/v/bootstrap-scss-plugins.svg?style=for-the-badge)](https://www.npmjs.org/package/bootstrap-scss-plugins)
 [![License](https://img.shields.io/github/license/coldfrontlabs/bootstrap-scss-plugins.svg?style=for-the-badge)](/LICENSE)
 
